@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body { background: rgb(200,200,200); }
+        #page { width: 21cm; height: 29.7cm; background: white; display: block; margin: 0 auto; margin-top: 0.2cm; margin-bottom: 0.5cm; box-shadow: 0 0 0.5cm rgba(0,0,0,0.6); padding: 1cm; }
+        .float { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #428bca; color: #FFF !important; border-radius: 50px; text-align: center; box-shadow: 2px 2px 3px #999; font-size: 25px; line-height: 60px; }
+        .float:hover { bottom: 41px; background-color: #1b78c8; }
+
+        @media print {
+            body, #page { margin: 0; box-shadow: 0; }
+            .float { display: none; }
+            /*
+                Colocar aqui outras particularidades para o momento da impressão
+            */
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <p>Olá mundo</p>
+        <p>Folha A4 compatível com bootstrap 3.3.7</p>
+     </div>
+    <a href="javascript:window.print();" class="float" title="Imprimir">
+        <i class="glyphicon glyphicon-print"></i>
+    </a>
+</body>
+</html>
